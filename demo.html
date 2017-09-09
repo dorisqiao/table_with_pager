@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>table with pager</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+	<body>
+        <div id="container" class="container"></div>
+
+        <!--引入外部js文件-->
+        <script src="script/jquery-1.11.3.js"></script>
+        <script src="script/oop-basic.js"></script>
+        <script src="script/pager.js"></script>
+        <script>
+            window.onload = function(){
+                doris.ajax.request("GET", "test.php", {
+                    success:function(responseText, responseXML){
+                        console.log("请求成功");
+                        new Table({
+                            data:responseText,
+                            pagerBtnNum:7,
+                            columnName:['一班', '二班','三班','四班','五班'],
+                            clickPrevFn:function(){
+                                //alert('prev page!');
+                            },
+                            clickNextFn:function(){
+                                //alert('next page');
+                            }
+                        });
+                    },
+                    failure:function(msg){
+                        console.log(msg);
+                    }
+                });
+            }
+        </script>
+	</body>
+</html>

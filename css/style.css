@@ -1,0 +1,146 @@
+   /**
+    * basic elements
+    * wrapper, pull-left, pull-right, ul, ol, dl, li, select, input, btn, arrow
+    *
+   **/
+.doris-wrapper{
+    font-family:inherit;
+    font-size: 14px;
+    width:100%;
+    margin-top: 10px;
+}
+.doris-wrapper:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.doris-pull-left{
+    float:left;
+}
+.doris-pull-right{
+    float:right;
+}
+.doris-wrapper ul, .doris-wrapper ol, .doris-wrapper dl{
+    padding:0;
+    margin:0;
+}
+.doris-wrapper ul li, .doris-wrapper ol li{
+    list-style: none;
+    padding:0;
+    margin:0;
+}
+.doris-wrapper select, .doris-wrapper input{
+    padding:4px;
+}
+.doris-wrapper input{
+    width:26px;
+    text-align: center;
+}
+.doris-btn{
+    background:#f6f6f6;
+    border:1px solid #ddd;
+    border-radius:4px;
+    outline:none;
+    padding:4px 10px;
+    cursor: pointer;
+}
+.doris-btn:hover{
+    background:#c3c3c3;
+}
+.doris-btn-default{
+    border:1px solid #aaa;
+}
+.doris-btn-default:hover, .doris-btn-default.active{
+    background:#aaa;
+    color:#fff;
+}
+.doris-btn-danger{
+    border:1px solid #f44;
+    background:#f44;
+    color:#fff;
+}
+.doris-btn-danger:hover, .doris-btn-danger.active{
+    background:#f00;
+}
+.doris-btn-info{
+    border:1px solid #79AAAA;
+    background:#79AAAA;
+    color:#fff;
+}
+.doris-btn-info:hover, .doris-btn-info.active{
+    background:#528B8B;
+}
+.doris-arrow{
+    position:absolute;
+    width:0;
+    height:0;
+    right:10px;
+    top:50%;
+    margin:-3px;
+    transition:all .15s;
+    border:6px solid transparent;
+    opacity:.5;
+}
+.doris-arrow.asc{
+    border-bottom-color:#f00;
+    opacity:1;
+}
+.doris-arrow.des{
+    border-top-color:#f00;
+    opacity:1;
+}
+
+   /**
+    * table main
+    * tr, th, td
+    *
+   **/
+
+.doris-wrapper .doris-table{
+    width:100%;
+    border-collapse: collapse;
+}
+.doris-wrapper .doris-table img{
+    vertical-align:middle;
+}
+.doris-wrapper .doris-table tr{
+    border-left:1px solid #dddddd;
+    border-top:1px solid #dddddd;
+}
+.doris-wrapper .doris-table th, .doris-wrapper .doris-table td{
+    text-align: center;
+    border-right:1px solid #dddddd;
+    border-bottom:1px solid #dddddd;
+    padding:6px;
+}
+.doris-wrapper .doris-table th{
+    position:relative;
+    background:#eee;
+}
+.doris-wrapper .doris-table th:hover{
+    cursor:pointer;
+    background:#d3d3d3;
+}
+.doris-wrapper .doris-table td.col-first{
+    width:40px;
+}
+
+   /**
+    * pager and operations
+    * pager, pager-sizer
+    *
+   **/
+
+.doris-wrapper .doris-pager:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.doris-wrapper .doris-pager li{
+   float:left;
+   margin-right:10px;
+}
+.doris-wrapper .doris-page-sizer{
+    width:350px;
+}
+
