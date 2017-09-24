@@ -17,7 +17,7 @@
                 doris.ajax.request("GET", "test.php", {
                     success:function(responseText, responseXML){
                         console.log("请求成功");
-                        new Table({
+                        new $.fn.Table({
                             data:responseText,
                             pagerBtnNum:7,
                             columnName:['一班', '二班','三班','四班','五班'],
